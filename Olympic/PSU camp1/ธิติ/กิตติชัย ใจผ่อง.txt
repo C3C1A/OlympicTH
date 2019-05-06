@@ -1,0 +1,286 @@
+ข้อ 1
+
+#include <stdio.h> 
+#include <stdlib.h> 
+ 
+int main() 
+{ 
+    int a = 10; 
+    int b = 3; 
+    printf("%d\n", a + b ); // 13
+    printf("%d\n", a - b ); // 7
+    printf("%d\n", a * b ); // 30
+    printf("%d\n", a / b ); // 3
+    printf("%d\n", a % b ); // 1
+    printf("----------\n");   
+    a = 11; 
+    b = -3; 
+    printf("%d\n", a + b ); // 8
+    printf("%d\n", a - b ); // 14
+    printf("%d\n", a * b ); // -33
+    printf("%d\n", a / b ); // -3
+    printf("%d\n", a % b ); // 2
+    printf("----------\n");  
+ 
+    a = -11; 
+    b = -3; 
+    printf("%d\n", a + b ); // -14
+    printf("%d\n", a - b ); // -8
+    printf("%d\n", a * b ); // 33
+    printf("%d\n", a / b ); // 3
+    printf("%d\n", a % b ); // -2
+    printf("----------\n");  
+ 
+    a = -11; 
+    b = 3; 
+    printf("%d\n", a + b ); // -8
+    printf("%d\n", a - b ); // -14
+    printf("%d\n", a * b ); // -33
+    printf("%d\n", a / b ); // -3
+    printf("%d\n", a % b ); // -2
+    printf("----------\n");  
+ 
+    double c = 12.5; 
+    double d = 2.0; 
+    printf("%f\n", c + d ); // 14.500000
+    printf("%f\n", c - d ); // 10.500000
+    printf("%f\n", c * d ); // 25.000000
+    printf("%f\n", c / d ); // 6.250000
+    printf("----------\n");  
+ 
+    c = 12.5; 
+    d = -2.0;     printf("%f\n", c + d ); // 10.500000
+    printf("%f\n", c - d ); // 14.500000
+    printf("%f\n", c * d ); // -25.000000
+    printf("%f\n", c / d ); // -6.250000
+    printf("----------\n");  
+ 
+    c = -12.5; 
+    d = -2.0; 
+    printf("%f\n", c + d ); // -14.500000
+    printf("%f\n", c - d ); // -10.500000
+    printf("%f\n", c * d ); // 25.000000
+    printf("%f\n", c / d ); // 6.250000
+    printf("----------\n");  
+ 
+    c = -12.5; 
+    d = 2.0; 
+    printf("%f\n", c + d ); // -14.500000
+    printf("%f\n", c - d ); // -10.500000
+    printf("%f\n", c * d ); // -25.000000
+    printf("%f\n", c / d ); // -6.250000
+    printf("----------\n");  
+ 
+    int x = 7; 
+    double y = 8.5; 
+    printf("%d\n", (int)(y) % 4 );      // 0
+    printf("%f\n", y );                 // 8.500000
+    printf("%d\n", (int)(x + y) % 4 );  // 3
+    printf("----------\n"); 
+ 
+    int i; 
+    int j; 
+    i = 5; 
+    j = i; 
+    printf("%d %d\n", i, j ); // 5 5
+    i = j / 2; 
+    printf("%d %d\n", i, j ); // 2 5
+    i = 2 * j / 2; 
+    printf("%d %d\n", i, j ); // 5 5
+    i = 2 * (j / 2); 
+    printf("%d %d\n", i, j ); // 5 5
+    printf("----------\n"); 
+ 
+    return 0; 
+} 
+
+
+
+
+
+ข้อ 2
+
+#include<stdio.h>
+int main(){
+
+float fahrenheit=0,celsius=0;
+
+// input
+// fahrenheit = 100;
+// fahrenheit = -100.00;
+fahrenheit = 212.00;
+celsius = ( (5/9.0) * (fahrenheit - 32) );
+printf("%.2f",celsius);
+
+return 0;
+}
+
+
+
+
+ข้อ 3
+
+#include<stdio.h>
+int main(){
+
+double pounds=0,kilograms=0;
+
+// input
+// pounds = 50.00;
+// pounds = 100.00;
+pounds = 1234567890;
+kilograms = pounds * 0.454;
+printf("%.2f\n",kilograms);
+
+return 0;
+}
+
+
+
+
+ข้อ 4
+
+#include<stdio.h>
+int main(){
+
+double price=0,qty=0,vat=0,total=0;
+
+// input
+// price=55.50;qty=2;vat=7.77;
+// price=100.00;qty=50;vat=350.00;
+ price=1000000.00;qty=4000000;vat=280000000000.00;
+total = (price * qty) + vat;
+printf("%.2lf",total);
+
+return 0;
+}
+
+
+
+
+ข้อ 5
+
+#include<stdio.h>
+int main(){
+
+int width=0,height=0,area=0,perimeter=0;
+
+// input
+// width=800;height=600;
+// width=1920;height=1080;
+width=123450;height=678900;
+area = width * height;
+perimeter = 2 * (width + height);
+printf("%d\n%d",area,perimeter);
+
+return 0;
+}
+
+
+
+
+
+ข้อ 6
+
+#include<stdio.h>
+
+int main(){
+
+int num=0,sum=0,res=0;
+
+// num = 123;
+num = 12345;
+while(num>0){
+    res = num % 10;
+    sum = sum + res;
+    num = num / 10;
+    }
+printf("%d",sum);
+
+return 0;
+}
+
+
+
+
+
+ข้อ 7
+
+#include<stdio.h>
+#include<math.h>
+int main(){
+
+double rEarth=7600,rSun=865000,vEarth=0,vSun=0,total=0;
+
+vEarth = (4/3.0)*(22/7.0)*(pow((rEarth/2.0),3));
+vSun = (4/3.0)*(22/7.0)*(pow((rSun/2.0),3));
+total = vSun / vEarth;
+printf("Volume of the earth is %.2lf cubic miles\n",vEarth);
+printf("Volume of the sun is %.2lf cubic miles\n",vSun);
+printf("The sun's volume is %.2lf times greater than the earth's.\n",total);
+
+return 0;
+}
+
+
+
+
+
+ข้อ 8
+
+#include<stdio.h>
+int main(){
+
+int second=0,lenght=150000000,speed=299792.458,min=0;
+double total=0;
+
+total = lenght/speed;
+min = total/60;
+second = total - (min*60);
+printf("Light will use %d minute(s) and %d second(s) to travel from the sun to the earth.",min,second);
+
+return 0;
+}
+
+
+
+
+ข้อ 9
+
+#include<stdio.h>
+#include<math.h>
+int main(){
+
+float s=0,A=0,a=0,b=0,c=0;
+
+// input
+a=39;b=42;c=45;
+s = (a+b+c)/2.0;
+A = sqrt(s*(s-a)*(s-b)*(s-c));
+printf("%.2f",A);
+
+return 0;
+}
+
+
+
+
+
+ข้อ 10
+
+#include<stdio.h>
+#include<math.h>
+int main(){
+
+int feet=0;
+float radius=0,area=0,inch=0;
+
+// input
+area = 100;
+radius = sqrt(area/(22/7.0));
+feet = radius;
+inch = (radius-feet)*12;
+printf("The radius of a circle with area %.1f square feet is %d feet %.0f inches. ",area,feet,inch);
+
+return 0;
+}
