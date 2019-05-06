@@ -1,0 +1,28 @@
+# depslib dependency file v1.0
+1444989343 source:d:\new folder\psu\first\demo.c
+	<stdio.h>
+	<string.h>
+	<math.h>
+
+1444208116 source:d:\new folder\psu\first\test.c
+	<stdio.h>
+	<math.h>
+
+1444383859 source:d:\new folder\psu\first\blank.c
+	<stdio.h>
+
+1444806488 source:d:\new folder\psu\ดารารัตน์\demo\pointer\pointer2.c
+	<stdio.h>
+
+1444900987 source:d:\new folder\psu\first\ra.cpp
+	<iostream>
+	<cassert>
+	<climits>
+	<cstring>
+
+1444990166 source:g:\psu\first\demo.c
+	<stdio.h>
+	<string.h>
+	<math.h>
+	<stdlib.h>
+
